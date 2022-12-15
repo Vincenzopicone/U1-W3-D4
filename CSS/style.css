@@ -6,6 +6,7 @@ body {
 }
 
 main {
+    text-align: center;
 }
 
 
@@ -16,7 +17,8 @@ section {
     padding: 1%;
     border-radius: 10px 10px 10px 10px;
     text-align: center; 
-    border: 2px solid black;   
+    border: 2px solid black;
+    margin: auto 18%;   
 }
 
 section > input {
@@ -48,6 +50,6 @@ aside {
     padding: 1%;
     border-radius: 10px 10px 10px 10px;
     text-align: center; 
-    border: 2px solid black; 
-    margin-top: 1%; 
+    border: 2px solid black;  
+    margin: 1% 18%;
 }

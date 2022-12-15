@@ -13,11 +13,14 @@
     <h1> LISTA DI COSE DA FARE </h1>
   </header>
   <section>
-    <input id="inputText" type="text" onkeyup="inserireTesto()" placeholder="Aggiungi un task qui">
-    <button id="buttonText" onclick="addTask" type="button" aria-placeholder="Inserisci"> Inserisci </button>
+    <input 
+    type="text" 
+    id="inputText" 
+    onkeyup="inserireTesto(event)" 
+    placeholder="Aggiungi un task qui">
+    <button id="buttonText" onclick="addTask(event)"> Aggiungi </button>
   </section>
   <aside id="lista">
-
   </aside>
 </main>
 </body>

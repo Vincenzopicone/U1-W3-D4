@@ -1,12 +1,17 @@
-const inserireTesto = (event) => {
-  if (event.key === "Enter") {
-    const testoInserito = document.getElementById("inputText").value;
-    if (testoInserito === "") {
-      const nuovoDiv = document.createElement("div");
-      nuovoDiv.classList.add("lista");
-      nuovoDiv.innerHTML = testoInserito;
-      document.getElementById("lista").appendChild(nuovoDiv);
-      document.getElementById("inputText").value = "";
-    }
+const addClass = (event) => {
+  const elementoSelezionato = event.target;
+  elementoSelezionato.classlist.add("selected");
+};
+const addTask = (event) => {
+  const valueInput = document.getElementById("inputText").value;
+  if (valueInput === "") {
+    alert("Inserisci testo");
+  } else {
+    const newDiv = document.createElement("div");
+    newDiv.classList.add("lista");
+    newDiv.innerText = valueInput;
+    newDiv.onclick = addClass;
+    document.getElementById("lista").appendChild(newDiv);
+    document.getElementById("inputText").value = "";
   }
 };
