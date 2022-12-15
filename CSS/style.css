@@ -9,7 +9,6 @@ main {
     text-align: center;
 }
 
-
 section {
     background-color: white;
     width: 60%;
@@ -52,4 +51,13 @@ aside {
     text-align: center; 
     border: 2px solid black;  
     margin: 1% 18%;
+    font-size: 2em;
+}
+
+.lista {
+    border: 1px solid;
+    margin-top: 1%;
+    border-radius: 7px 7px 7px 7px;
+    background-color: black;
+    color: white;
 }
