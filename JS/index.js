@@ -3,7 +3,7 @@ const addText = (event) => {
   elementoSelezionato.classlist.add("selected");
 };
 
-const addTask = (event) => {
+const addTask = () => {
   const valueInput = document.getElementById("inputText").value;
   if (valueInput === "") {
     alert("Inserisci testo");
@@ -19,7 +19,7 @@ const addTask = (event) => {
 
 /*const addTaskEnter = inserireTesto(event) => {
   const inputEnter = document.getElementById("inputText").value;
-  if (inputEnter === "Enter") {
+  if (event.key === "Enter") {
     alert("Inserisci testo");
   } else {
     const newDiv = document.createElement("div");
@@ -29,5 +29,4 @@ const addTask = (event) => {
     document.getElementById("lista").appendChild(newDiv);
     document.getElementById("inputText").value = "";
   }
-}
-};*/
+}*/
