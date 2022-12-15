@@ -16,3 +16,18 @@ const addTask = (event) => {
     document.getElementById("inputText").value = "";
   }
 };
+
+/*const addTaskEnter = inserireTesto(event) => {
+  const inputEnter = document.getElementById("inputText").value;
+  if (inputEnter === "Enter") {
+    alert("Inserisci testo");
+  } else {
+    const newDiv = document.createElement("div");
+    newDiv.classList.add("lista");
+    newDiv.innerText = inputEnter;
+    newDiv.onclick = addText;
+    document.getElementById("lista").appendChild(newDiv);
+    document.getElementById("inputText").value = "";
+  }
+}
+};*/
